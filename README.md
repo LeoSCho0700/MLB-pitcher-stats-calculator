@@ -21,25 +21,25 @@
 ### Function
 #### 1) 들어가고싶은 구단에서 ERA 넣었을때 연봉
 
-    **input** : team, era
+    **input**: team, era
 
-    **output** : salary estimation
+    **output**: salary estimation
 
-    **algorithm** : accept input, create sql list with all the players in designated team. Append a list with faulty values but the ERA. Sort the list by ERA. Create two new lists, and append all the ERA values from the previous list into one of them using ‘for’. Append all the salary values into the other new list, for the faulty value will not be put into account. Create a dataframe using pandas, which allows us to acquire the preceding and succeeding values . Create new list and append the dataframe, which is the sum of the two salary values. Print product by dividing into two.
+    **algorithm**: accept input, create sql list with all the players in designated team. Append a list with faulty values but the ERA. Sort the list by ERA. Create two new lists, and append all the ERA values from the previous list into one of them using ‘for’. Append all the salary values into the other new list, for the faulty value will not be put into account. Create a dataframe using pandas, which allows us to acquire the preceding and succeeding values . Create new list and append the dataframe, which is the sum of the two salary values. Print product by dividing into two.
 
 #### 2) era 입력하면 실력 비슷한 친구들 뽑아주기
 
-    **input** : era=float(input())
+    **input**: era=float(input())
 
-    **output** : name of other players
+    **output**: name of other players
 
-    **algorithm** : era from database for (input+-0.5)
+    **algorithm**: era from database for (input+-0.5)
 
 #### 3) ERA 입력하면 mlb에서 몇등인지 뽑아주기
 
-    **input** : era=float(input())
+    **input**: era=float(input())
 
-    **output** : number
+    **output**: number
 
-    **algorithm** : era from database+new era⇒ list and sort, print([index(new era)])
+    **algorithm**: era from database+new era⇒ list and sort, print([index(new era)])
 ***
